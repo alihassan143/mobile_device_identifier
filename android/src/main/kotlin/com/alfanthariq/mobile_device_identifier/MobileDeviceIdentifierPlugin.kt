@@ -29,7 +29,7 @@ class MobileDeviceIdentifierPlugin : FlutterPlugin, MethodChannel.MethodCallHand
         when (call.method) {
             "getDeviceId" -> {
                 val deviceId = getDeviceId(appContext)
-                Log.i("decvice_id",deviceId);
+                Log.i("device_id",deviceId);
                 result.success(deviceId)
             }
             else -> result.notImplemented()
